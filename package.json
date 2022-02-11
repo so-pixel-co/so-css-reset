@@ -1,6 +1,6 @@
 {
   "name": "@sodesign/css-reset",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "So's CSS reset based on lots of different things",
   "main": "./dist/reset.min.css",
   "scripts": {
