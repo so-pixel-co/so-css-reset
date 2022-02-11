@@ -1,0 +1,26 @@
+{
+  "name": "so-css-reset",
+  "version": "1.0.0",
+  "description": "So's CSS reset based on lots of different things",
+  "main": "./dist/reset.min.css",
+  "scripts": {
+    "build": "uglifycss src/reset.css > dist/reset.min.css && cp src/reset.css dist/reset.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/so-design-studio/so-css-reset.git"
+  },
+  "keywords": [
+    "css reset",
+    "so css reset"
+  ],
+  "author": "So Design <studio@so-design.co.uk> (https://so-design.co.uk)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/so-design-studio/so-css-reset/issues"
+  },
+  "homepage": "https://github.com/so-design-studio/so-css-resett#readme",
+  "devDependencies": {
+    "uglifycss": "0.0.29"
+  }
+}
