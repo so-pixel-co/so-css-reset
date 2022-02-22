@@ -4,7 +4,7 @@
   "description": "So's CSS reset based on lots of different things",
   "main": "./dist/reset.min.css",
   "scripts": {
-    "build": "uglifycss src/reset.css > dist/reset.min.css && cp src/reset.css dist/reset.css"
+    "build": "parcel-css --minify --bundle --targets '>=0.25%' src/reset.css -o dist/reset.min.css && cp src/reset.css dist/reset.css"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
     "url": "https://github.com/so-design-studio/so-css-reset/issues"
   },
   "homepage": "https://github.com/so-design-studio/so-css-resett#readme",
-  "devDependencies": {
-    "uglifycss": "0.0.29"
+  "dependencies": {
+    "@parcel/css-cli": "^1.3.2"
   }
 }
