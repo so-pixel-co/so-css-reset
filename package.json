@@ -1,26 +1,29 @@
 {
-  "name": "@sodesign/css-reset",
-  "version": "3.0.0",
-  "description": "So's CSS reset based on lots of different things",
+  "name": "@so-pixel-co/css-reset",
+  "version": "3.2.0",
+  "description": "The So Pixel Co's CSS reset based on lots of different things",
   "main": "./dist/reset.min.css",
   "scripts": {
     "build": "parcel-css --minify --bundle --targets '>=0.25%' src/reset.css -o dist/reset.min.css && cp src/reset.css dist/reset.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/so-design-studio/so-css-reset.git"
+    "url": "git+https://github.com/so-pixel-co/so-css-reset.git"
   },
   "keywords": [
     "css reset",
     "so css reset"
   ],
-  "author": "So Design <studio@so-design.co.uk> (https://so-design.co.uk)",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "The So Pixel Co. <hello@so-pixel.co.uk> (https://so-pixel.co.uk)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/so-design-studio/so-css-reset/issues"
+    "url": "https://github.com/so-pixel-co/so-css-reset/issues"
   },
-  "homepage": "https://github.com/so-design-studio/so-css-resett#readme",
+  "homepage": "https://github.com/so-pixel-co/so-css-resett#readme",
   "dependencies": {
-    "@parcel/css-cli": "^1.3.2"
+    "@parcel/css-cli": "^1.13.1"
   }
 }
