@@ -13,7 +13,8 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -26,33 +27,57 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg,
+iframe {
   max-width: 100%;
   display: block;
 }
 
-
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
-h1, h2, h3, h4, h5, h6
-button, input, label {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 button,
+input,
+label {
   line-height: 1.1;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
 
   *,
@@ -62,5 +87,12 @@ h1, h2, h3, h4, h5, h6 {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* Make sure relative fotn sizes work when printing */
+@media print {
+  body {
+    font-size: 8pt;
   }
 }
